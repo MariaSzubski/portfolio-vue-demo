@@ -1,7 +1,9 @@
 # PLUGINS
 
-**This directory is not required, you can delete it if you don't want to use it.**
+- Javascript plugins settings
+- Load in nuxt.config.js > plugins
 
-This directory contains Javascript plugins that you want to run before mounting the root Vue.js application.
+[Documentation](https://nuxtjs.org/guide/plugins)
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/guide/plugins).
+Plugin Docs:
+[LazyLoad](// https://github.com/hilongjw/vue-lazyload/blob/master/README.md)

@@ -27,12 +27,14 @@ export default {
   ** Global CSS
   */
   css: [
+    '@/assets/scss/global.scss'
   ],
 
   /*
   ** Plugins to load before mounting the App
   */
   plugins: [
+    '~/plugins/vue-lazyload',
   ],
 
   /*

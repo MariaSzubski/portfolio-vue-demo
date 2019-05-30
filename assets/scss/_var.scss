@@ -1,6 +1,41 @@
+@font-face {
+  font-family: 'Milkshake';
+  src: url('/Milkshake.ttf') format('truetype');
+  font-weight: 300;
+}
+
 // Colors
-$white: #FFFFFF;
+$white:     #FFFFFF;
+$black:     #121D28;
+$gray-dk:   #2B2E3C;
+$gray-md:   #7F7F93;
+$gray-lt:   #EDEFF6;
+$yellow:    #FEC52E;
+$green:     #009877;
+$green-lt:  #00AA89;
+$blue:      #004876;
+$grape:     #272580;
+$plum:      #602651;
+$pink:      #F3695A;
+
+
+// Breakpoints
+$scr-sm:    640px;
+$scr-md:    1024px;
+$scr-lg:    1280px;
+
 
 // Mixins @include
 
-// Inherit @extends %
+
+// Inherit @extend %
+
+%font-nunito{
+  font-family: Nunito, 'Century Gothic', 'Lucida Grande', sans-serif;
+}
+%font-milkshake{
+  font-family: Milkshake, 'Bookman Old Style', 'Century Gothic', serif;
+}
+%font-hack{
+  font-family: Hack, Courier, monospace;
+}

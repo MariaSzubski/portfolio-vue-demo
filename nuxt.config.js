@@ -14,7 +14,20 @@ export default {
       { hid: 'description', name: 'description', content: pkg.description }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      {
+        rel: 'icon',
+        type: 'image/x-icon', href: '/favicon.ico'
+      },
+      {
+        // Default Font
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css?family=Nunito:300,400,600,700,800,900'
+      },
+      {
+        // Code Font
+        rel: 'stylesheet',
+        href: '//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack-subset.css'
+      },
     ]
   },
 

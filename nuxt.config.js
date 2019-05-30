@@ -41,7 +41,16 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
+    '@nuxtjs/style-resources',
   ],
+
+
+  styleResources: {
+    scss: [
+      // use underscore "_" & file extension ".scss"
+      'assets/scss/_var.scss'
+    ]
+  },
 
   /*
   ** Build configuration
@@ -51,6 +60,7 @@ export default {
     ** You can extend webpack config here
     */
     extend(config, ctx) {
+
       // Run ESLint on save
       if (ctx.isDev && ctx.isClient) {
         config.module.rules.push({

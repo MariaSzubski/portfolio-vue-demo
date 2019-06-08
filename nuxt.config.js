@@ -40,7 +40,8 @@ export default {
   ** Global CSS
   */
   css: [
-    '@/assets/scss/global.scss'
+    '@/assets/scss/global.scss',
+    '@/assets/scss/prism.scss'
   ],
 
   /*
@@ -86,7 +87,7 @@ export default {
         config.module.rules.push({
           enforce: 'pre',
           test: /\.(js|vue)$/,
-          loader: 'eslint-loader',
+          // loader: 'eslint-loader',
           exclude: /(node_modules)/
         })
       }

@@ -16,6 +16,7 @@ $green-lt:  #00AA89;
 $blue:      #004876;
 $grape:     #272580;
 $plum:      #602651;
+$plum-lt:   lighten( $plum, 18% );
 $pink:      #F3695A;
 
 
@@ -23,6 +24,9 @@ $pink:      #F3695A;
 $scr-sm:    640px;
 $scr-md:    1024px;
 $scr-lg:    1280px;
+
+// Transitions
+$fade: .2s ease-out;
 
 
 // Mixins @include

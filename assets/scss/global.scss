@@ -1,3 +1,61 @@
+html {
+  @extend %font-nunito;
+  font-size: 10px;
+  color: $white;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  position: relative;
+  background: linear-gradient(
+    0deg, $gray-dk 0%, darken($gray-dk, 8%) 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+body {
+  font-size: 1.2rem;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+
+h1 {
+  @extend %font-milkshake;
+}
+
+
+a{
+  color: $white;
+  text-decoration: none;
+  position: relative;
+  &:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0.2rem;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(
+      90deg, $plum 0%, $plum-lt 50%, $plum 100% );
+    transform: scaleX(0);
+    transform-origin: bottom center;
+    transition: transform $fade;
+  }
+  &:hover:after{
+    transform: scaleX(1);
+    transform-origin: bottom center;
+  }
+}
+
+
+
 img[lazy='loaded'] {
   opacity: 0;
   animation-name: fadeIn;

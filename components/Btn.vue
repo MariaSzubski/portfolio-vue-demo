@@ -38,7 +38,8 @@ a{
     }
     &:hover{
       color: $white;
-      background-color: $green;
+        background: linear-gradient(
+          25deg, $green 0%, $green-lt 100% );
     }
   }
 

@@ -30,9 +30,9 @@ div[app] {
 
 main {
   margin: 0 auto;
+  padding: 0rem 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
 }
 </style>

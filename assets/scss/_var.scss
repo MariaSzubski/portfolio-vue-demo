@@ -1,20 +1,16 @@
-@font-face {
-  font-family: 'Milkshake';
-  src: url('/Milkshake.ttf') format('truetype');
-  font-weight: 300;
-}
-
 // Colors
-$white:     #FFFFFF;
+$white:     #E6E8EE;
 $black:     #121D28;
 $gray-dk:   #2B2E3C;
-$gray-md:   #7F7F93;
+$gray-md:   rgba(255,255,255,.7);
 $gray-lt:   #EDEFF6;
 $yellow:    #FEC52E;
-$green:     #009877;
-$green-lt:  #00AA89;
+$green:     saturate( darken( #06A281, 5% ), 50% );
+$green-lt:  #19BA8A;
 $blue:      #004876;
+$blue-lt:   saturate( lighten( $blue, 15% ), 10%);
 $grape:     #272580;
+$grape-lt:  saturate( lighten( $grape, 32% ), 10%);
 $plum:      #602651;
 $plum-lt:   lighten( $plum, 18% );
 $pink:      #F3695A;
@@ -42,4 +38,7 @@ $fade: .2s ease-out;
 }
 %font-hack{
   font-family: Hack, Courier, monospace;
+}
+%round {
+  border-radius: 4px;
 }

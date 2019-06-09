@@ -28,6 +28,17 @@ export default {
         rel: 'stylesheet',
         href: '//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack-subset.css'
       },
+      {
+        // Milkshake Preload
+        rel: 'preload',
+        href: '/font.css',
+        as: 'style',
+      },
+      {
+        // Milkshake Font
+        rel: 'stylesheet',
+        href: '/font.css'
+      },
     ]
   },
 
@@ -41,7 +52,6 @@ export default {
   */
   css: [
     '@/assets/scss/global.scss',
-    '@/assets/scss/prism.scss'
   ],
 
   /*
@@ -66,6 +76,14 @@ export default {
     ]
   },
 
+  render: {
+    bundleRenderer: {
+      shouldPreload: (file, type) => {
+        return ['script', 'style', 'font', 'css'].includes(type)
+      }
+    }
+  },
+
   /*
   ** Build configuration
   */
@@ -75,8 +93,9 @@ export default {
         autoprefixer: {
           grid: 'autoplace'
         }
-      }
+      },
     },
+    extractCSS: true,
     /*
     ** You can extend webpack config here
     */

@@ -13,7 +13,7 @@ footer{
   display: flex;
   flex-direction: column;
   padding: 2rem;
-  margin-top: 4rem;
+  margin-top: 10rem;
 
   text-align: center;
   font-weight: 600;

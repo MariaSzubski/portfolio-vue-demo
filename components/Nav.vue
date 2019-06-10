@@ -1,13 +1,13 @@
 <template>
   <nav>
-    <a href=".">
+    <nuxt-link to="/">
       <img src="logo_white.svg" alt="Maria Szubski Digital Logo" title="Maria Szubski Digital, LLC"/>
-    </a>
+    </nuxt-link>
     <section>
-      <a href="/type-spec">About</a>
-      <a href="/project">Projects</a>
-      <a href="">Experience</a>
-      <Btn href="" green>Let's Connect</Btn>
+      <nuxt-link to="/type-spec">About</nuxt-link>
+      <nuxt-link to="/project">Projects</nuxt-link>
+      <nuxt-link to="">Experience</nuxt-link>
+      <Btn to="/project" green>Let's Connect</Btn>
     </section>
   </nav>
 </template>

@@ -1,10 +1,12 @@
 <template>
-  <a><slot /></a>
+  <nuxt-link v-if="to" :to="to"><slot /></nuxt-link>
+  <a v-else><slot /></a>
 </template>
 
 <script>
 export default {
   props: {
+    to: {},
     message: {
       type: String,
       default: ''

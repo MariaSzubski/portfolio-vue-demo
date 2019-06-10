@@ -7,7 +7,7 @@ export default {
   ** Headers of the page
   */
   head: {
-    title: pkg.name,
+    title: "Maria Szubski Digital, LLC • Web Development Consultant • Freelance Front End Developer",
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },

@@ -1,5 +1,8 @@
 <template>
   <nav>
+    <a href=".">
+      <img src="logo_white.svg" alt="Maria Szubski Digital Logo" title="Maria Szubski Digital, LLC"/>
+    </a>
     <section>
       <a href="/">About</a>
       <a href="/type-spec">Projects</a>
@@ -23,17 +26,37 @@ export default {
 
 nav {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   padding: 2rem 4rem;
 }
 
-a {
+section a {
   font-weight: bold;
-  &:not(:last-child){ padding: 1rem 2rem; }
   text-transform: uppercase;
-  transition:
-    background-color $fade,
-    color $fade;
+  color: $white;
+  position: relative;
+
+  &:not(:last-child) {
+    padding: 1rem 2rem;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0.2rem;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(
+      90deg, $plum 0%, $plum-lt 50%, $plum 100% );
+    transform: scaleX(0);
+    transform-origin: bottom center;
+    transition: transform $fade;
+  }
+
+  &:hover:after {
+    transform: scaleX(1);
+  }
 }
 
 </style>

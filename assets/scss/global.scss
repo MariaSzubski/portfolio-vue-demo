@@ -111,37 +111,49 @@ p {
   line-height: 140%;
   font-size: 1.6rem;
 
-  &[lg]{
+  &[lg] {
     font-size: 2.4rem;
     line-hieght: 145%;
   }
 
-  &[dk]{
+  &[dk] {
     color: $gray-dk;
+  }
+
+  a {
+    position: relative;
+
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 0.1rem;
+      bottom: 0;
+      left: 0;
+    }
+
+    &:before {
+      background: rgba(white, .5);
+    }
+
+    &:after {
+      background: linear-gradient(
+        90deg, rgba($green, 1) 0%, $green 50%, rgba($green, 1) 100% );
+      transform: scaleX(0);
+      transform-origin: bottom center;
+      transition: transform $fade;
+    }
+
+    &:hover:after {
+      transform: scaleX(1);
+    }
   }
 }
 
 a{
   color: $white;
   text-decoration: none;
-  position: relative;
-  &:after{
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 0.2rem;
-    bottom: 0;
-    left: 0;
-    background: linear-gradient(
-      90deg, $plum 0%, $plum-lt 50%, $plum 100% );
-    transform: scaleX(0);
-    transform-origin: bottom center;
-    transition: transform $fade;
-  }
-  &:hover:after{
-    transform: scaleX(1);
-    transform-origin: bottom center;
-  }
 }
 
 ul,

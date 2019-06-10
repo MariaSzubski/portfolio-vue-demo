@@ -20,10 +20,21 @@ export default {
     classLang() {
       return 'language-' + this.lang;
     }
+  },
+  head () {
+    return {
+      link: [
+        { // Prism Preload
+          rel: 'preload',
+          href: '/prism.css',
+          as: 'style',
+        },
+        { // Prism Styles
+          rel: 'stylesheet',
+          href: '/prism.css'
+        },
+      ],
+    }
   }
 }
 </script>
-
-<style lang="scss">
-@import '@/assets/scss/prism.scss';
-</style>

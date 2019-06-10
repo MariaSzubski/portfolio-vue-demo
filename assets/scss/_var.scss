@@ -40,5 +40,8 @@ $fade: .2s ease-out;
   font-family: Hack, Courier, monospace;
 }
 %round {
-  border-radius: 4px;
+  border-radius: 0.4rem;
+}
+%bg {
+  background-color: rgba(white, .03);
 }

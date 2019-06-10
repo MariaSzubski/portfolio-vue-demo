@@ -21,35 +21,72 @@
       <p>
         Donec id elit non mi porta gravida at eget metus. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Nulla vitae elit libero, a pharetra augue. Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras justo odio, dapibus ac facilisis in, egestas.
       </p>
-      <h3>Skills</h3>
-      <section class="lt" style="max-width: 840px; background: rgba(255,255,255,.03); padding: 30px;">
-        <hgroup>
-          <h5>Technologies</h5>
-        </hgroup>
+      <SkillGroup class="lt" />
 
-        <SkillTag sk="bootstrap" />
-        <SkillTag sk="CSS3" />
-        <SkillTag sk="es6" lb="JavaScript ES6" />
-        <SkillTag sk="git" />
-        <SkillTag sk="gitHub" />
-        <SkillTag sk="graphQL" />
-        <SkillTag sk="HTML5" />
-        <SkillTag sk="jQuery" />
-        <SkillTag sk="javaScript" />
-        <SkillTag sk="gitHub" />
-        <SkillTag sk="SASS" />
-        <SkillTag sk="nuxt" />
-        <SkillTag sk="vue" />
-        <SkillTag sk="react" />
-        <SkillTag sk="middleman" />
-        <SkillTag sk="python" />
-        <SkillTag sk="storybook" />
-        <SkillTag sk="netlify" />
-        <SkillTag lb="Responsive Design" />
-      </section>
-      <p>
+      <CodeBlock header="Code Snippet">
+        if (Modernizr.localstorage) {
 
-      </p>
+        // ON INITIAL LOAD: Check local storage and convert units to saved preference
+        toggle_pxrem();
+
+        // ON BUTTON PRESS: Change button state, update localStorage, and convert units
+        (function pxrem(){
+          $('button').click(function(e){
+            $('button').toggleClass('btn-selected');
+            $('#size-px').hasClass('btn-selected') ?
+            localStorage.setItem('pxrem', 'px') : localStorage.setItem('pxrem', 'rem');
+            convert();
+          });
+        })();
+
+        // Check localStorage and convert units
+        function toggle_pxrem(){
+          (localStorage.pxrem == undefined) ? localStorage.setItem('pxrem', 'px') : null;
+
+          (localStorage.pxrem == 'rem') ?
+          ($('#size-px').removeClass('btn-selected'),
+          $('#size-rem').addClass('btn-selected'))
+          : null;
+
+          (localStorage.pxrem == 'px') ?
+          ($('#size-rem').removeClass('btn-selected'),
+          $('#size-px').addClass('btn-selected'))
+          : null;
+
+          convert();
+        }
+
+        // Convert units
+        function convert(){
+
+          /* rem -> px */
+          if (localStorage.pxrem == 'px'){
+            $('.pxrem').each(function(){
+              let px = $(this).html();
+              if (px.includes('rem')) {
+                let px_arr = px.match(/[^rem]+|rem/g);
+                px_arr[0] = px_arr[0] * 16;
+                px_arr[1] = 'px';
+                $(this).html(px_arr.join(''));
+              };
+            });
+          }
+
+          /* px -> rem */
+          else if (localStorage.pxrem == 'rem'){
+            $('.pxrem').each(function(){
+              let rem = $(this).html();
+              let rem_arr = rem.match(/[^px]+|px/g);
+              rem_arr[0] = rem_arr[0] / 16;
+              rem_arr[1] = 'rem';
+              $(this).html(rem_arr.join(''));
+            });
+          };
+
+        };
+      };
+      </CodeBlock>
+
 
       <h4>Card Headers</h4>
       <h6>Labels</h6>
@@ -60,41 +97,19 @@
       <p class="subheadline">Company Name // Team</p>
       <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Vestibulum id ligula porta felis euismod semper. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
 
-
-      <pre class="language-javascript"><h4>Timer Numbers</h4><code>
-      // ------------------------------------- Start &amp; Reset Functions
-      function startTimer() {
-      	sec = 59;
-      	countdown = setInterval(currentTime, 1000);
-      	toggle = false;
-      	startReset.innerHTML = 'Reset';
-      }
-
-      function resetTimer(){
-      	clearInterval(countdown);
-      	toggle = true;
-      	startReset.innerHTML = 'Start';
-      	timer.innerHTML = "1:00";
-      }</code></pre>
-
     </div>
   </main>
 </template>
 
 <script>
-import Prism from 'prismjs'
-import Normalizer from 'prismjs/plugins/normalize-whitespace/prism-normalize-whitespace'
-import SkillTag from '~/components/SkillTag.vue'
-
+import SkillGroup from '~/components/SkillGroup.vue'
+import CodeBlock from '~/components/CodeBlock.vue'
 
 export default {
   components: {
-    SkillTag
+    SkillGroup,
+    CodeBlock
   }
 }
-
 </script>
 
-<style lang="scss">
-@import '@/assets/scss/prism.scss';
-</style>

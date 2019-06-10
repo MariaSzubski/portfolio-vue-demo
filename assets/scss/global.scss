@@ -43,6 +43,10 @@ body {
   margin: 0;
 }
 
+*[element]{
+  margin: 10rem 0rem;
+}
+
 // --------------------------- Text
 h1 {
   @extend %font-milkshake;
@@ -62,8 +66,13 @@ h2 {
   text-shadow: 0.2rem 0.3rem 0rem $black;
 }
 
-hgroup {
-
+hgroup,
+h1[pad],
+h2[pad],
+h3[pad],
+h4[pad],
+h5[pad],
+h6[pad] {
   margin-bottom: 1.5rem;
 }
 
@@ -98,7 +107,6 @@ h6,
 }
 
 p {
-  max-width: 82rem;
   margin-bottom: 3rem;
   line-height: 140%;
   font-size: 1.6rem;

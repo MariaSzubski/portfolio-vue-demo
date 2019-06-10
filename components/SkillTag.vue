@@ -19,31 +19,31 @@ span {
   display: inline-flex;
   vertical-align: top;
   align-items: center;
-  padding: 0rem 1rem;
-  margin: 0.4rem 0.2rem;
-  height: 2.8rem;
+  margin: 0.3rem 0.6rem 0.3rem 0rem;
   &:first-of-type { margin-left: 0rem; }
   &:last-of-type { margin-right: 0rem; }
-  font-weight: 600;
+  font-weight: 700;
   text-transform: capitalize;
 
   .lt & {
-    background-color: $white;
+    background-color: white;
     color: $black;
+    padding: 0.4rem 1rem;
   }
 
   .dk & {
     background-color: $black;
+    padding: 0.6rem 1rem;
   }
 
   &:hover{
     cursor:default;
   }
-  
+
   img {
-    width: 1.8rem;
-    height: 1.8rem;
-    margin-right: 0.8rem;
+    width: 2.2rem;
+    height: 2.2rem;
+    margin-right: 0.6rem;
   }
 }
 </style>

@@ -19,7 +19,7 @@ $code-keyword:       #FF759F; // pink
 code[class*="language-"],
 pre[class*="language-"] {
   color: $white;
-	background: $gray-dk;
+	// background: rgba(white,.03);
 	@extend %font-hack;
   font-size: 1.3rem;
 	line-height: 1.6;
@@ -59,7 +59,7 @@ pre[class*="language-"] {
 pre[class*="language-"] {
 	position: relative;
 	overflow: visible;
-  max-width: 76rem;
+  max-width: 70rem;
 
   border-radius: 0.5rem;
   padding: 2rem;
@@ -71,15 +71,8 @@ pre[class*="language-"] {
     padding: 1rem 0rem;
   }
 
-  & h4{
+  & h5{
     @extend %font-nunito;
-    text-shadow: none;
-    color: $gray-lt;
-    text-align: center;
-    margin-bottom: 1rem;
-    font-weight: 400;
-    font-size: 1.9rem;
-    text-transform: uppercase;
   }
 }
 
@@ -101,7 +94,7 @@ code[class*="language"] {
 /* Margin bottom to accomodate shadow */
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
-	background: $gray-dk;
+	background: rgba($gray-dk,.6);
 	box-sizing: border-box;
 	margin-bottom: 1rem;
 }

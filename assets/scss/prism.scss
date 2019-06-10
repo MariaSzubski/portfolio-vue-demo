@@ -77,7 +77,9 @@ pre[class*="language-"] {
 }
 
 pre[class*="language-"] > code {
-  max-height: 50rem;
+  @media (min-width: $scr-sm){
+    max-height: 50rem;
+  }
 }
 
 code[class*="language"] {

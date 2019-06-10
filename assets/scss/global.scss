@@ -16,10 +16,10 @@ html {
     position: fixed;
     z-index: -1;
     // background: linear-gradient( 150deg, $black 8%, $gray-dk 100% );
-    // background: linear-gradient( 150deg, $black 8%, darken($green, 8%) 100% );
-    // background: linear-gradient( 150deg, $black 8%, darken($blue, 4%) 100% );
+    // background: linear-gradient( 150deg, $black 8%, darken($green, 12%) 100% );
+    background: linear-gradient( 150deg, $black 8%, darken($blue, 4%) 100% );
     // background: linear-gradient( 150deg, $black 8%, darken($grape, 5%) 100% );
-    background: linear-gradient( 150deg, $black 8%, darken($plum, 6%) 100% );
+    // background: linear-gradient( 150deg, $black 8%, darken($plum, 6%) 100% );
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100vw 100vh;

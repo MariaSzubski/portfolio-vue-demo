@@ -4,8 +4,8 @@
       <img src="logo_white.svg" alt="Maria Szubski Digital Logo" title="Maria Szubski Digital, LLC"/>
     </a>
     <section>
-      <a href="/">About</a>
-      <a href="/type-spec">Projects</a>
+      <a href="/type-spec">About</a>
+      <a href="/project">Projects</a>
       <a href="">Experience</a>
       <Btn href="" green>Let's Connect</Btn>
     </section>

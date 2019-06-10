@@ -29,7 +29,6 @@ div[app] {
 }
 
 main {
-
   max-width: 86rem;
   margin: 0 auto;
   padding: 0rem 1rem;

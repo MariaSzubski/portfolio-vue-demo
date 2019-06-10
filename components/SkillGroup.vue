@@ -62,16 +62,22 @@ export default {
 <style lang="scss" scoped>
 
 [element] > div {
-  @extend %bg;
-  padding: 4rem 3rem;
-  > section:not(:last-of-type){
+  > section:not(:last-of-type) {
     margin-bottom: 4rem;
+  }
+
+  @extend %bg;
+  padding: 4rem 1rem;
+  margin: 0rem -2rem;
+
+  @media (min-width: $scr-sm) {
+    padding: 4rem 3rem;
+    margin: 0rem;
   }
 }
 
 .tagGroup{
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
 }
 </style>

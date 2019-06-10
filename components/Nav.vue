@@ -30,6 +30,12 @@ nav {
   padding: 2rem 4rem;
 }
 
+section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
 section a {
   font-weight: bold;
   text-transform: uppercase;

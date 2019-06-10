@@ -17,39 +17,71 @@ export default {
 
 <style lang="scss" scoped>
 a{
-  display: inline-block;
-  border-radius: 0.4rem;
-  border: 1px solid $gray-md;
-  text-decoration: none;
-  padding: 1rem 3rem;
-  transition:
-    background-color $fade,
-    color $fade;
+  position: relative;
+  display: inline-flex;
+  vertical-align: top;
+  justify-content: center;
 
-  &:after{ background: none; }
+  @extend %round;
+  border: 1px solid $gray-md;
+  padding: 1rem 3rem;
+  &:not(:last-of-type) { margin-right: 1rem; }
+  transition: color $fade-x;
+
+  color: $white;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-shadow: 0rem 0.1rem 0.1rem rgba($black, .75);
+
+  img{
+    width: 1.8rem;
+    height: 1.8rem;
+    margin-right: 0.8rem;
+    margin-left: -0.5rem;
+  }
+
+  &:before{ // Background
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity $fade;
+  }
+
+  &:after{ // Underline
+    background: none;
+  }
+
   &:hover{
     color: $white;
-    background-color: $gray-dk;
+    background: $gray-dk;
+    &:before{ opacity: 1; }
   }
 
   &[green]{
     border-color: $green;
-    &:after{
-      background: linear-gradient(
-        90deg, $green 0%, $blue 50%, $green 100% );
+    &:before{ // Background
+      background: linear-gradient( 30deg, $green 20%, $green-lt 100% );
+    }
+    &:after{ // Underline
+      background: linear-gradient( 90deg, $green 0%, $blue 50%, $green 100% );
     }
     &:hover{
       color: $white;
-      background: linear-gradient(
-        25deg, $green 0%, $green-lt 100% );
+      background: none;
     }
   }
 
   &[plum]{
     color: $white;
     border-color: $plum;
-    &:hover{
-      background-color: $plum;
+    &:before{ // Background
+      background: $plum;
     }
   }
 }

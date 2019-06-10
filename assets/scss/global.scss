@@ -48,24 +48,6 @@ body {
 }
 
 // --------------------------- Text
-h1 {
-  @extend %font-milkshake;
-  font-weight: 300;
-  font-size: 6.4rem;
-  text-align: center;
-  color: $green-lt;
-}
-
-h2 {
-  font-weight: 400;
-  font-size: 2.2rem;
-  text-transform: none;
-  text-shadow: none;
-  letter-spacing: 0.02rem;
-  text-align: center;
-  text-shadow: 0.2rem 0.3rem 0rem $black;
-}
-
 hgroup,
 h1[pad],
 h2[pad],
@@ -74,6 +56,24 @@ h4[pad],
 h5[pad],
 h6[pad] {
   margin-bottom: 1.5rem;
+}
+
+h1 {
+  @extend %font-milkshake;
+  font-weight: 300;
+  font-size: 5.4rem;
+  text-align: center;
+  color: $green-lt;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 2rem;
+  text-transform: none;
+  text-shadow: none;
+  letter-spacing: 0.02rem;
+  text-align: center;
+  text-shadow: 0.2rem 0.3rem 0rem $black;
 }
 
 h3 {
@@ -134,12 +134,11 @@ p {
     }
 
     &:before {
-      background: rgba(white, .5);
+      background: rgba($green, .8);
     }
 
     &:after {
-      background: linear-gradient(
-        90deg, rgba($green, 1) 0%, $green 50%, rgba($green, 1) 100% );
+      background: $green-lt;
       transform: scaleX(0);
       transform-origin: bottom center;
       transition: transform $fade;

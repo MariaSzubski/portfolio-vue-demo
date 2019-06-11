@@ -76,7 +76,6 @@ export default {
   */
   modules: [
     '@nuxtjs/style-resources',
-    'nuxt-trailingslash-module',
     'nuxt-webfontloader',
   ],
 

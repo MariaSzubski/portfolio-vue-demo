@@ -5470,11 +5470,6 @@ number-is-nan@^1.0.0:
   resolved "https://registry.yarnpkg.com/number-is-nan/-/number-is-nan-1.0.1.tgz#097b602b53422a522c1afb8790318336941a011d"
   integrity sha1-CXtgK1NCKlIsGvuHkDGDNpQaAR0=
 
-nuxt-trailingslash-module@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/nuxt-trailingslash-module/-/nuxt-trailingslash-module-1.1.0.tgz#9038b82c2b426b07d9c1279bd1758829571beeee"
-  integrity sha512-cZHN+I3FPaQuJ0pDmXJ+E+7Sl2HTsLrh2vEV2ZW6HmRWRHDuooKIfxYgSrJfemZejiumyGjB8/5LA4MpVO5rfg==
-
 nuxt-webfontloader@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/nuxt-webfontloader/-/nuxt-webfontloader-1.1.0.tgz#68b47ffbeaee4c41969f42f57a86946e0c36715c"

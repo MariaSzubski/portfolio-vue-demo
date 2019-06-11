@@ -38,29 +38,18 @@ export default {
       {
         rel: 'mask-icon', sizes: 'color: #f3695a',
         href: '/favicon/safari-pinned-tab.svg'
-      }, // End Favicon
-      {
-        // Default Font
-        rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css?family=Nunito:300,400,600,700'
-      },
-      {
-        // Code Font
-        rel: 'stylesheet',
-        href: '//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack-subset.css'
-      },
-      {
-        // Milkshake Preload
-        rel: 'preload',
-        href: '/font.css',
-        as: 'style',
-      },
-      {
-        // Milkshake Font
-        rel: 'stylesheet',
-        href: '/font.css'
-      },
+      }
     ]
+  },
+
+  webfontloader: {
+    google: {
+      families: ['Nunito:300,400,600,700']
+    },
+    custom: {
+      families: ['Milkshake', 'Hack'],
+      urls: ['/font.css', '//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack-subset.css']
+    }
   },
 
   /*
@@ -88,6 +77,7 @@ export default {
   modules: [
     '@nuxtjs/style-resources',
     'nuxt-trailingslash-module',
+    'nuxt-webfontloader',
   ],
 
 

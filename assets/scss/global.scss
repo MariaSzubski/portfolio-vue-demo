@@ -10,6 +10,15 @@ html {
   position: relative;
   z-index: 1;
   background-color: $gray-dk;
+  & [app],
+  &.wf-loading [app] {
+    opacity: 0;
+  }
+  &.wf-active [app],
+  &.wf-inactive [app] {
+    opacity: 1;
+    transition: opacity $fade;
+  }
   &:before{
     content: '';
     width: 100vw;

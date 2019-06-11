@@ -28,12 +28,33 @@ nav {
   display: flex;
   justify-content: space-between;
   padding: 2rem 4rem;
+
+  @media (max-width: $scr-sm){
+    padding: 1rem 2rem;
+    // z-index: 9000;
+    // position: fixed;
+    // bottom: 0rem;
+    // width: 100vw;
+    // background: linear-gradient( 150deg, $black 8%, darken($blue, 4%) 100% );
+    // background-repeat: no-repeat;
+    // background-attachment: fixed;
+    // background-size: 100vw 100vh;
+    // background-position: bottom center;
+
+    img {
+      width: 3.2rem;
+      height: 3.2rem;
+    }
+  }
 }
 
 section {
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  @media (max-width: $scr-sm){
+    flex-wrap: wrap;
+  }
 }
 
 section a {
@@ -43,7 +64,12 @@ section a {
   position: relative;
 
   &:not(:last-child) {
+
     padding: 1rem 2rem;
+
+    @media (max-width: $scr-sm){
+      padding: 1rem;
+    }
   }
 
   &:after {

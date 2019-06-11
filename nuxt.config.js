@@ -16,7 +16,7 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: pkg.description },
       { content: '#f3695a', name: 'msapplication-TileColor' },
-      { content: '#ffffff', name: 'theme-color' }
+      { content: '#121D28', name: 'theme-color' }
     ],
     link: [
       { // Start Favicon

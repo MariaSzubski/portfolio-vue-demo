@@ -22,7 +22,7 @@
             </Btn>
           </div>
           <div class="lt">
-            <h5 pad>Skills</h5>
+            <h5 pad>Technology &amp; Skills</h5>
             <SkillTag v-for="s, idx in skills"
                       :sk="s"
                       :key="idx"
@@ -48,18 +48,21 @@ export default {
       subtitle: 'Documentation Site Template',
       hero: 'style_guide',
       skills: [
-        'phoneGap',
-        'PHP'
+        'javaScript',
+        'AJAX',
+        'jQuery',
+        'PHP',
+        'LESS'
       ],
       links: [
         {
-          href: 'netlify.com',
-          label: 'Demo'
-        },
-        {
-          href: 'github.com',
+          href: 'https://github.com/mariaszubski/style-guide',
           label: 'Source Code',
           github: true,
+        },
+        {
+          href: 'https://netlify.com',
+          label: 'Project Demo'
         }
       ],
     }
@@ -103,19 +106,34 @@ main {
   display: flex;
   align-items: flex-start;
   max-width: 96rem;
+  @media (max-width: $scr-sm){
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 article {
   flex: 3;
   margin-right: 3vw;
+  @media (max-width: $scr-sm){
+    margin-right: 0vw;
+    order: 2;
+  }
 }
 
 aside {
   flex: 1;
+  @media (max-width: $scr-sm){
+    width: 100%;
+    > div:first-of-type a {
+      display: inline-flex;
+      width: calc(50% - 0.6rem);
+      margin: 0.3rem;
+    }
+  }
+
   > div {
     @extend %bg;
-    // display: flex;
-    // flex-direction: column;
     padding: 2rem;
     margin-bottom: 2rem;
   }

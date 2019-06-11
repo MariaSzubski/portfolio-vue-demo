@@ -110,6 +110,13 @@ export default {
     }
   },
 
+  redirect: [
+    {
+      from: '^.*(?<!\/)$',
+      to: (from, req) => req.url
+    }
+  ],
+
   /*
   ** Build configuration
   */

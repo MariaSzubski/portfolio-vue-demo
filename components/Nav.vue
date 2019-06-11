@@ -1,7 +1,7 @@
 <template>
   <nav>
     <nuxt-link to="/">
-      <img src="logo_white.svg" alt="Maria Szubski Digital Logo" title="Maria Szubski Digital, LLC"/>
+      <img src="/logo_white.svg" alt="Maria Szubski Digital Logo" title="Maria Szubski Digital, LLC"/>
     </nuxt-link>
     <section>
       <nuxt-link to="/type-spec">About</nuxt-link>

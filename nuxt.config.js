@@ -36,17 +36,13 @@ export default {
         type: 'image/png', href: '/favicon/favicon-16x16.png'
       },
       {
-        rel: 'manifest', sizes: '16x16',
-        href: '/favicon/site.webmanifest'
-      },
-      {
         rel: 'mask-icon', sizes: 'color: #f3695a',
         href: '/favicon/safari-pinned-tab.svg'
       }, // End Favicon
       {
         // Default Font
         rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css?family=Nunito:300,400,600,700,800,900'
+        href: 'https://fonts.googleapis.com/css?family=Nunito:300,400,600,700'
       },
       {
         // Code Font
@@ -105,7 +101,7 @@ export default {
   render: {
     bundleRenderer: {
       shouldPreload: (file, type) => {
-        return ['script', 'style', 'font', 'css'].includes(type)
+        return ['script', 'style', 'font', 'css', 'stylesheet'].includes(type)
       }
     }
   },

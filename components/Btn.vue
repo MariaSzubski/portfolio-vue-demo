@@ -63,6 +63,13 @@ a{
     &:before{ opacity: 1; }
   }
 
+  &[vertical]{
+    &:not(:last-of-type){ margin-bottom: 0.5rem; }
+    width: 100%;
+    padding: 1rem;
+    align-items: flex-start;
+  }
+
   &[green]{
     border-color: $green;
     &:before{ // Background

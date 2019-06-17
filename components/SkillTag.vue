@@ -32,8 +32,8 @@ span {
   }
 
   .dk & {
-    background-color: $black;
-    padding: 0.6rem 1rem;
+    background-color: rgba($black, .5);
+    padding: 0.6rem 1.5rem;
   }
 
   &:hover{
@@ -47,7 +47,8 @@ span {
   img {
     width: 2.6rem;
     height: 2.6rem;
-    margin-right: 1rem;
+    .lt & { margin-right: 1rem; }
+    .dk & { margin-right: 1.2rem; }
   }
 
   @media (min-width: $scr-sm) {

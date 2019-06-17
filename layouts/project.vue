@@ -21,12 +21,15 @@
               {{ l.label }}
             </Btn>
           </div>
-          <div class="lt">
+          <div class="dk">
             <h5 pad>Technology &amp; Skills</h5>
-            <SkillTag v-for="s, idx in skills"
-                      :sk="s"
-                      :key="idx"
-                      vertical />
+            <div class="tag-group">
+              <SkillTag v-for="s, idx in skills"
+                        :sk="s.sk"
+                        :lb="s.lb ? s.lb : '' "
+                        :key="idx"
+                        vertical />
+            </div>
           </div>
         </aside>
       </div>
@@ -48,11 +51,11 @@ export default {
       subtitle: 'Documentation Site Template',
       hero: 'style_guide',
       skills: [
-        'javaScript',
-        'AJAX',
-        'jQuery',
-        'PHP',
-        'LESS'
+        { sk: 'javaScript' },
+        { sk: 'AJAX' },
+        { sk: 'jQuery' },
+        { sk: 'PHP' },
+        { sk: 'LESS' },
       ],
       links: [
         {
@@ -138,4 +141,9 @@ aside {
     margin-bottom: 2rem;
   }
 }
+
+.tag-group span{
+  width: 100%;
+}
+
 </style>

@@ -6,7 +6,7 @@
     <section>
       <nuxt-link to="/type-spec">About</nuxt-link>
       <nuxt-link to="/projects">Projects</nuxt-link>
-      <nuxt-link to="">Experience</nuxt-link>
+      <nuxt-link to="/projects/style-guide">Experience</nuxt-link>
       <Btn to="/projects" green>Let's Connect</Btn>
     </section>
   </nav>

@@ -84,9 +84,8 @@
 
 <script>
 import WrapProject from '~/components/WrapProject.vue'
-import CodeBlock from '~/components/CodeBlock.vue'
-
-import database from '~/pages/projects/data/style-guide.yml'
+import CodeBlock from   '~/components/CodeBlock.vue'
+import database from    '~/data/style-guide.yml'
 
 export default {
   components: {

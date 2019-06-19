@@ -46,11 +46,11 @@ export default {
     Btn
   },
   props: {
-    title: [],
-    subtitle: [],
-    links: [],
-    skills: [],
-    hero: [],
+    title: { type: String },
+    subtitle:{ type: String },
+    links: { type: Array },
+    skills: { type: Array },
+    hero: { type: String },
   },
   computed: {
     headerImg() {

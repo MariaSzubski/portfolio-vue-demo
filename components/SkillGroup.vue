@@ -30,8 +30,8 @@
       <section>
         <h5 pad>Tools &amp; Concepts</h5>
         <div class="tagGroup">
-        <SkillTag sk="gitHub" />
-        <SkillTag sk="w3c" lb="Accessibility" />
+          <SkillTag sk="gitHub" />
+          <SkillTag sk="w3c" lb="Accessibility" />
           <SkillTag sk="node" />
           <SkillTag sk="NPM" />
           <SkillTag sk="yarn" />

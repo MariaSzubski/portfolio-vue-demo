@@ -1,0 +1,24 @@
+---
+
+title: Style Guide
+subtitle: Documentation Template Site
+hero: style_guide
+
+skills:
+  - sk: javaScript
+  - sk: AJAX
+  -
+    sk: jquery
+    lb: jQuery
+  - sk: PHP
+  - sk: LESS
+
+links:
+  -
+    href: https://github.com/mariaszubski/style-guide
+    label: Source Code
+    github: true
+  -
+    href: https://netlify.com
+    label: Project Demo
+    github: false

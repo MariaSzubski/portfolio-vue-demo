@@ -29,7 +29,7 @@ div[app] {
 }
 
 main {
-  max-width: 86rem;
+  max-width: 96rem;
   margin: 0 auto;
   padding: 0rem 1rem;
   display: flex;

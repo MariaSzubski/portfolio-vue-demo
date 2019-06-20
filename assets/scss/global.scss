@@ -1,0 +1,195 @@
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  @extend %font-nunito;
+  font-size: 62.5%;
+  color: $white;
+  position: relative;
+  z-index: 1;
+  background-color: $gray-dk;
+  & [app],
+  &.wf-loading [app] {
+    opacity: 0;
+  }
+  &.wf-active [app],
+  &.wf-inactive [app] {
+    opacity: 1;
+    transition: opacity $fade;
+  }
+  &:before{
+    content: '';
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: -1;
+    // background: linear-gradient( 150deg, $black 8%, $gray-dk 100% );
+    // background: linear-gradient( 150deg, $black 8%, darken($green, 12%) 100% );
+    background: linear-gradient( 150deg, $black 8%, darken($blue, 4%) 100% );
+    // background: linear-gradient( 150deg, $black 8%, darken($grape, 5%) 100% );
+    // background: linear-gradient( 150deg, $black 8%, darken($plum, 6%) 100% );
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100vw 100vh;
+  }
+}
+
+body {
+  position: relative;
+  z-index: 2;
+  font-size: 1.6rem;
+  padding: 0px;
+  margin: 0px;
+  margin: 0px;
+  border: 0px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+*[element]{
+  margin: 10rem 0rem;
+}
+
+// --------------------------- Text
+hgroup,
+h1[pad],
+h2[pad],
+h3[pad],
+h4[pad],
+h5[pad],
+h6[pad] {
+  margin-bottom: 1.5rem;
+}
+
+h1 {
+  @extend %font-milkshake;
+  font-weight: 300;
+  font-size: 5.4rem;
+  text-align: center;
+  color: $green-lt;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 2rem;
+  text-transform: none;
+  text-shadow: none;
+  letter-spacing: 0.02rem;
+  text-align: center;
+  text-shadow: 0.2rem 0.3rem 0rem $black;
+}
+
+h3 {
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 3.6rem;
+  text-shadow: 0.2rem 0.3rem 0rem $black;
+}
+
+h4 {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+h5 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: $yellow;
+  text-transform: uppercase;
+  letter-spacing: 0.02rem;
+  text-align: center;
+}
+
+h6,
+.h6 {
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: $gray-md;
+  text-transform: uppercase;
+}
+
+p {
+  margin-bottom: 3rem;
+  line-height: 140%;
+
+  &[lg] {
+    font-size: 2.4rem;
+    line-hieght: 145%;
+  }
+
+  &[dk] {
+    color: $gray-dk;
+  }
+}
+
+a{
+  text-decoration: none;
+  position: relative;
+
+  ul &,
+  p & {
+    color: $white;
+
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 0.2rem;
+      bottom: 0;
+      left: 0;
+    }
+
+    &:before {
+      background: rgba($green, .8);
+    }
+
+    &:after {
+      background: $green-lt;
+      transform: scaleX(0);
+      transform-origin: bottom center;
+      transition: transform $fade;
+    }
+
+    &:hover:after {
+      transform: scaleX(1);
+    }
+  }
+}
+
+
+ul,
+li {
+  list-style-type: none;
+}
+
+// --------------------------- Media
+img {
+  display: inline-block;
+}
+
+img[lazy='loaded'] {
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-duration: .5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-direction: normal;
+  animation-timing-function: ease-out;
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}

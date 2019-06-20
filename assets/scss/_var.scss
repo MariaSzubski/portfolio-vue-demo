@@ -1,0 +1,48 @@
+// Colors
+$white:     #E6E8EE;
+$black:     #121D28;
+$gray-dk:   #2B2E3C;
+$gray-md:   rgba(255,255,255,.7);
+$gray-lt:   #EDEFF6;
+$yellow:    #FEC52E;
+$green:     saturate( darken( #06A281, 5% ), 50% );
+$green-lt:  #19BA8A;
+$blue:      #004876;
+$blue-lt:   #0086DB;
+$grape:     #272580;
+$grape-lt:  saturate( lighten( $grape, 32% ), 10%);
+$plum:      #602651;
+$plum-lt:   lighten( $plum, 18% );
+$pink:      #F3695A;
+
+
+// Breakpoints
+$scr-sm:    640px;
+$scr-md:    1024px;
+$scr-lg:    1280px;
+
+// Transitions
+$fade: .2s ease-out;
+$fade-x: .12s ease-in;
+
+
+// Mixins @include
+
+
+// Inherit @extend %
+
+%font-nunito{
+  font-family: Nunito, 'Century Gothic', 'Lucida Grande', sans-serif;
+}
+%font-milkshake{
+  font-family: Milkshake, 'Bookman Old Style', 'Century Gothic', serif;
+}
+%font-hack{
+  font-family: Hack, Courier, monospace;
+}
+%round {
+  border-radius: 0.4rem;
+}
+%bg {
+  background-color: rgba(white, .03);
+}

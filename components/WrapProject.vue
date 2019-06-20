@@ -76,7 +76,7 @@ div[project] {
   margin-top: 10rem;
   display: flex;
   align-items: flex-start;
-  max-width: 96rem;
+  max-width: 102.4rem;
   @media (max-width: $scr-sm){
     flex-direction: column;
     align-items: center;

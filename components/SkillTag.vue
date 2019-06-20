@@ -29,11 +29,13 @@ span {
     background-color: white;
     color: $black;
     padding: 0.4rem 1.4rem;
+    height: 3rem;
   }
 
   .dk & {
     background-color: rgba($black, .5);
     padding: 0.6rem 1.5rem;
+    height: 3.8rem;
   }
 
   &:hover{

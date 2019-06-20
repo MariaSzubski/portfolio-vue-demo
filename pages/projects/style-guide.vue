@@ -1,22 +1,22 @@
 <template>
   <WrapProject v-bind="dataToPass">
     <p lg>
-      Nullam id dolor id nibh ultricies vehicula ut id elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
-    </p>
-    <p lg>
-      Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. <a href="#">This is an inline link</a> Maecenas sed diam eget risus varius blandit sit amet non magna.
+      The Style Guide is a template for project documentation. It displays font styles, color palettes, web components, and design patterns. It's built to be responsive across all device sizes with AJAX and PHP, with fallbacks for users who have JavaScript disabled.
     </p>
     <hgroup>
-      <h3>Section Header</h3>
+      <h3>PIXEL/REM UNIT CONVERSION</h3>
     </hgroup>
     <p>
-      <strong>THIS IS A HEADLINE</strong>
+      Users can choose between pixels or rem units. This selection is site-wide and is saved to the browser's local storage. The values are calculated on the fly with JavaScript.
     </p>
-    <p>
-      Donec id elit non mi porta gravida at eget metus. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Nulla vitae elit libero, a pharetra augue. Maecenas faucibus mollis interdum. <a href="#">This is an inline link</a>  Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras justo odio, dapibus ac facilisis in, egestas.
-    </p>
-
-    <CodeBlock header="Code Snippet">
+    <!-- <CodeBlock class="markup" header="HTML Snippet">
+      <div class="btn-group" role="group">
+        <span>Units:</span>
+        <button type="button" id="size-px">px</button>
+        <button type="button" id="size-rem">rem</button>
+      </div>
+    </CodeBlock> -->
+    <CodeBlock header="JavaScript Snippet">
       if (Modernizr.localstorage) {
 
       // ON INITIAL LOAD: Check local storage and convert units to saved preference

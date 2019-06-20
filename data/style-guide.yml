@@ -5,20 +5,19 @@ subtitle: Documentation Template Site
 hero: style_guide
 
 skills:
-  - sk: javaScript
-  - sk: AJAX
-  -
-    sk: jquery
-    lb: jQuery
   - sk: PHP
+  - sk: javaScript
+  - sk: jQuery
   - sk: LESS
+  - lb: AJAX
+  - lb: Responsive Design
 
 links:
   -
-    href: https://github.com/mariaszubski/style-guide
+    href: https://github.com/MariaSzubski/style-guide
     label: Source Code
     github: true
   -
-    href: https://netlify.com
+    href: /assets/style-guide
     label: Project Demo
     github: false

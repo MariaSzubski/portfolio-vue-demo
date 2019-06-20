@@ -29,6 +29,7 @@ a{
   transition: color $fade-x;
 
   color: $white;
+  font-size: 1.3rem;
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;

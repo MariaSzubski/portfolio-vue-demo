@@ -16,6 +16,12 @@
           GitHub
         </Btn>
       </div>
+      <div class="projects" element>
+        <h5 pad>Projects</h5>
+        <p lg>
+          <nuxt-link to="/projects/style-guide">Style Guide</nuxt-link>
+        </p>
+      </div>
     </div>
   </main>
 </template>
@@ -36,3 +42,9 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+.projects {
+  text-align: center;
+}
+</style>

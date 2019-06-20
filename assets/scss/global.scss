@@ -39,7 +39,7 @@ html {
 body {
   position: relative;
   z-index: 2;
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   padding: 0px;
   margin: 0px;
   margin: 0px;
@@ -119,7 +119,6 @@ h6,
 p {
   margin-bottom: 3rem;
   line-height: 140%;
-  font-size: 1.6rem;
 
   &[lg] {
     font-size: 2.4rem;
@@ -129,9 +128,15 @@ p {
   &[dk] {
     color: $gray-dk;
   }
+}
 
-  a {
-    position: relative;
+a{
+  text-decoration: none;
+  position: relative;
+
+  ul &,
+  p & {
+    color: $white;
 
     &:before,
     &:after {
@@ -160,10 +165,6 @@ p {
   }
 }
 
-a{
-  color: $white;
-  text-decoration: none;
-}
 
 ul,
 li {

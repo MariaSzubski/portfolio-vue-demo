@@ -20,13 +20,11 @@
 
 <script>
 import WrapProject from '~/components/WrapProject.vue'
-import CodeBlock from   '~/components/CodeBlock.vue'
 import database from    '~/data/guitar-practice.yml'
 
 export default {
   components: {
-    WrapProject,
-    CodeBlock
+    WrapProject
   },
   data() {
     return { dataToPass: database }

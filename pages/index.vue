@@ -21,7 +21,7 @@
         <p lg><nuxt-link to="/projects/style-guide">Style Guide</nuxt-link></p>
         <p lg><nuxt-link to="/projects/guitar-practice">Guitar Practice</nuxt-link></p>
         <p lg><nuxt-link to="/projects/insight">Insight</nuxt-link></p>
-        <p lg><nuxt-link to="/projects/ikea">IKEA RFID</nuxt-link></p>
+        <p lg><nuxt-link to="/projects/ikea-experience">IKEA Experience</nuxt-link></p>
       </div>
     </div>
   </main>

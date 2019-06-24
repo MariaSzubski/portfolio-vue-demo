@@ -1,6 +1,76 @@
 ---
 
 -
+  title: Style Guide
+  subtitle: Documentation Template Site
+  hero: style_guide
+  desc: The Style Guide is a template for project documentation. It displays font styles, color palettes, web components, and design patterns. It's built to be responsive across all device sizes with AJAX and PHP, with fallbacks for users who have JavaScript disabled.
+
+  skills:
+    - sk: PHP
+    - sk: javaScript
+    - sk: jQuery
+    - sk: LESS
+    - lb: AJAX
+    - lb: Responsive Design
+
+  links:
+    -
+      href: https://github.com/MariaSzubski/style-guide
+      label: Source Code
+      github: true
+    -
+      href: /assets/style-guide
+      label: Project Demo
+      github: false
+-
+  title: Insight App
+  subtitle: Rethinking Standardized Testing
+  hero: insight
+  desc: This tablet-based alternative tests students’ conceptual knowledge and creative problem solving in an engaging, exploratory format.
+
+  skills:
+    - sk: PhoneGap
+    - sk: jQuery
+    - lb: Mobile UI Design
+    - lb: User Testing
+    - lb: Education Research
+
+  links:
+    -
+      href: https://github.com/MariaSzubski/insight
+      label: Source Code
+      github: true
+    -
+      href: /assets/insight
+      label: Project Demo
+      github: false
+    -
+      href: /assets/MSzubski_MDenzer_inSightProcess.pdf
+      label: Design Process (PDF)
+      github: false
+-
+  title: Spooky Animations
+  subtitle: CSS Keyframes
+  hero: spooky
+  desc: 'Halloween themed characters built with CSS and keyframe animations. Based on <a href="https://www.youtube.com/watch?v=ea69CKqsVMg" target="_blank">this demo</a>.'
+
+  skills:
+    -
+      sk: CSS3
+      lb: CSS Animation
+    - sk: SCSS
+
+  links:
+    -
+      href: https://github.com/MariaSzubski/lab/tree/master/spooky-css
+      label: Source Code
+      github: true
+    -
+      href: https://lab-mariasz-digital.netlify.com/spooky-css/
+      label: Project Demo
+      github: false
+-
   title: Guitar Practice
   subtitle: Skill Log & Song Tabs
   hero: guitar_practice
@@ -33,73 +103,3 @@
     - lb: UX Architecture
     - lb: Wayfinding
     - lb: Motion graphics
--
-  title: Insight App
-  subtitle: Rethinking Standardized Testing
-  hero: insight
-  desc: This tablet-based alternative tests students’ conceptual knowledge and creative problem solving in an engaging, exploratory format.
-
-  skills:
-    - sk: PhoneGap
-    - sk: jQuery
-    - lb: Mobile UI Design
-    - lb: User Testing
-    - lb: Education Research
-
-  links:
-    -
-      href: https://github.com/MariaSzubski/insight
-      label: Source Code
-      github: true
-    -
-      href: /assets/insight
-      label: Project Demo
-      github: false
-    -
-      href: /assets/MSzubski_MDenzer_inSightProcess.pdf
-      label: Design Process (PDF)
-      github: false
--
-  title: Spooky Animations
-  subtitle: CSS Keyframes
-  hero: style_guide
-  desc: 'CSS Keyframe animations based on <a href="#" target="_blank">Project</a>'
-
-  skills:
-    -
-      sk: CSS3
-      lb: CSS Animations
-    - sk: SCSS
-
-  links:
-    -
-      href: https://github.com/MariaSzubski/lab/css-animation-halloween
-      label: Source Code
-      github: true
-    -
-      href: /assets/spooky
-      label: Project Demo
-      github: false
--
-  title: Style Guide
-  subtitle: Documentation Template Site
-  hero: style_guide
-  desc: The Style Guide is a template for project documentation. It displays font styles, color palettes, web components, and design patterns. It's built to be responsive across all device sizes with AJAX and PHP, with fallbacks for users who have JavaScript disabled.
-
-  skills:
-    - sk: PHP
-    - sk: javaScript
-    - sk: jQuery
-    - sk: LESS
-    - lb: AJAX
-    - lb: Responsive Design
-
-  links:
-    -
-      href: https://github.com/MariaSzubski/style-guide
-      label: Source Code
-      github: true
-    -
-      href: /assets/style-guide
-      label: Project Demo
-      github: false

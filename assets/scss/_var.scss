@@ -45,5 +45,5 @@ $fade-x: .12s ease-in;
   border-radius: 0.4rem;
 }
 %bg {
-  background-color: rgba(white, .03);
+  background-color: rgba(darken($blue, 10%), .8);
 }

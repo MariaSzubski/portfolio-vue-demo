@@ -1,0 +1,105 @@
+---
+
+-
+  title: Guitar Practice
+  subtitle: Skill Log & Song Tabs
+  hero: guitar_practice
+  desc: Guitar Practice Log is a web app that tracks skill progress and displays song details.
+
+  skills:
+    - sk: JavaScript
+    - sk: LESS
+    - sk: InVision
+    - lb: Data Visualization
+    - lb: Responsive Design
+
+  links:
+    -
+      href: https://github.com/MariaSzubski/GuitarPractice
+      label: Source Code
+      github: true
+    -
+      href: https://github.com/MariaSzubski/GuitarPractice/wiki
+      label: Process Wiki
+      github: false
+-
+  title: Ikea Experience
+  subtitle: RFID Shopping List & Wayfinding Concept
+  hero: ikea_experience
+  desc: This project rethinks the IKEA shopping experience with an RFID shopping list and improved in-store navigation.
+
+  skills:
+    - lb: User Research
+    - lb: UX Architecture
+    - lb: Wayfinding
+    - lb: Motion graphics
+-
+  title: Insight App
+  subtitle: Rethinking Standardized Testing
+  hero: insight
+  desc: This tablet-based alternative tests students’ conceptual knowledge and creative problem solving in an engaging, exploratory format.
+
+  skills:
+    - sk: PhoneGap
+    - sk: jQuery
+    - lb: Mobile UI Design
+    - lb: User Testing
+    - lb: Education Research
+
+  links:
+    -
+      href: https://github.com/MariaSzubski/insight
+      label: Source Code
+      github: true
+    -
+      href: /assets/insight
+      label: Project Demo
+      github: false
+    -
+      href: /assets/MSzubski_MDenzer_inSightProcess.pdf
+      label: Design Process (PDF)
+      github: false
+-
+  title: Spooky Animations
+  subtitle: CSS Keyframes
+  hero: style_guide
+  desc: 'CSS Keyframe animations based on <a href="#" target="_blank">Project</a>'
+
+  skills:
+    -
+      sk: CSS3
+      lb: CSS Animations
+    - sk: SCSS
+
+  links:
+    -
+      href: https://github.com/MariaSzubski/lab/css-animation-halloween
+      label: Source Code
+      github: true
+    -
+      href: /assets/spooky
+      label: Project Demo
+      github: false
+-
+  title: Style Guide
+  subtitle: Documentation Template Site
+  hero: style_guide
+  desc: The Style Guide is a template for project documentation. It displays font styles, color palettes, web components, and design patterns. It's built to be responsive across all device sizes with AJAX and PHP, with fallbacks for users who have JavaScript disabled.
+
+  skills:
+    - sk: PHP
+    - sk: javaScript
+    - sk: jQuery
+    - sk: LESS
+    - lb: AJAX
+    - lb: Responsive Design
+
+  links:
+    -
+      href: https://github.com/MariaSzubski/style-guide
+      label: Source Code
+      github: true
+    -
+      href: /assets/style-guide
+      label: Project Demo
+      github: false

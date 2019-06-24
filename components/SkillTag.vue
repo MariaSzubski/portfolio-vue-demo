@@ -33,7 +33,7 @@ span {
   }
 
   .dk & {
-    background-color: rgba($black, .5);
+    background-color: rgba(darken($blue, 20%), .5);
     padding: 0.6rem 1.5rem;
     height: 3.8rem;
   }

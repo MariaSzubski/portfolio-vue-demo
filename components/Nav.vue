@@ -58,6 +58,7 @@ section {
 }
 
 section a {
+  font-size: 1.3rem;
   font-weight: bold;
   text-transform: uppercase;
   color: $white;
@@ -71,23 +72,26 @@ section a {
       padding: 1rem;
     }
   }
-
   &:after {
     content: '';
     position: absolute;
-    width: 100%;
+    width: calc(100% - 1.6rem);
     height: 0.2rem;
     bottom: 0;
-    left: 0;
+    left: 0.8rem;
     background: linear-gradient(
       90deg, $plum 0%, $plum-lt 50%, $plum 100% );
     transform: scaleX(0);
     transform-origin: bottom center;
     transition: transform $fade;
   }
-
   &:hover:after {
     transform: scaleX(1);
+  }
+  &.nuxt-link-active:after {
+    transform: scaleX(1);
+    background: linear-gradient(
+      90deg, $plum 0%, $plum-lt 50%, $plum 100% );
   }
 }
 

@@ -33,6 +33,7 @@ a{
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
+  text-align: center;
   text-shadow: 0rem 0.1rem 0.1rem rgba($black, .75);
 
   img{

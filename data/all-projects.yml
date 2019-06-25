@@ -1,6 +1,31 @@
 ---
 
 -
+  title: Gatsby Workshop
+  subtitle: Getting Started with Static Site Generators
+  hero: style_guide
+  desc: 'I led a workshop on <strong>Static Site Generators & GatsbyJS</strong> for <a href="https://www.meetup.com/JAMstack-Cincinnati/" target="_blank">JAMstack Cincinnati</a>. This project was used to introduce the concepts of React components, props and state, routing, plugins, css-in-js, and deployment.'
+
+  skills:
+    - sk: Gatsby
+    - sk: React
+    -
+      sk: JavaScript
+      lb: ES6
+    - sk: SCSS
+    - sk: yarn
+    - sk: netlify
+
+  links:
+    -
+      href: https://github.com/MariaSzubski/1906-getting-started-with-static-sites
+      label: Source Code
+      github: true
+    -
+      href: https://docs.google.com/presentation/d/12_HeL80Du2B6GEUQhsxrLm4R0gKGQdaM9Hm1JEtk_HQ/edit?usp=sharing
+      label: Slides
+      github: false
+-
   title: Style Guide
   subtitle: Documentation Template Site
   hero: style_guide
@@ -103,3 +128,14 @@
     - lb: UX Architecture
     - lb: Wayfinding
     - lb: Motion graphics
+-
+  title: This Portfolio
+  hero: ikea_experience
+
+  skills:
+    - sk: Vue
+    - sk: Nuxt
+    -
+      sk: Javascript
+      lb: ES6
+    - sk: netlify

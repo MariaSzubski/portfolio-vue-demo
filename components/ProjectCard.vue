@@ -1,5 +1,5 @@
 <template>
-  <article project element>
+  <article project>
 
     <div class="content">
       <h1>{{ title }}</h1>
@@ -66,8 +66,9 @@ export default {
 
 article[project]{
   display: flex;
+  margin: 6rem;
   max-width: 96rem;
-  background-color: rgba(darken($blue, 10%), .8);
+  background-color: rgba(darken($blue, 10%), .9);
 
   @media (max-width: $scr-sm){
     flex-direction: column;
@@ -86,6 +87,9 @@ article[project]{
   }
   h1 {
     font-size: 4.8rem;
+  }
+  p {
+    margin-bottom: 0;
   }
 }
 
@@ -124,6 +128,5 @@ aside {
     span { min-width: 100%; }
   }
 }
-
 
 </style>

@@ -21,7 +21,9 @@
       <p>
         Donec id elit non mi porta gravida at eget metus. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Nulla vitae elit libero, a pharetra augue. Maecenas faucibus mollis interdum. <a href="#">This is an inline link</a>  Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras justo odio, dapibus ac facilisis in, egestas.
       </p>
-      <SkillGroup class="lt" />
+      <section element>
+        <SkillGroup class="lt" />
+      </section>
 
       <CodeBlock header="Code Snippet">
         if (Modernizr.localstorage) {

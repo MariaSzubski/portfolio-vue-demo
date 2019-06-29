@@ -1,0 +1,56 @@
+---
+
+-
+  title: Technologies
+  skills:
+    -
+      sk: JavaScript
+      lb: JavaScript / ES6+
+    - sk: react
+    - sk: vue
+    - sk: gatsby
+    - sk: graphQL
+    - sk: git
+    - sk: webpack
+    - sk: netlify
+    - sk: storybookJS
+    - sk: nuxt
+    - sk: middleman
+    - sk: HTML5
+    - sk: CSS3
+    - sk: SCSS
+    -
+      sk: styled
+      lb: Styled Components
+      fm: .png
+    - sk: bootstrap
+    -
+      sk: jquery
+      lb: jQuery
+    - sk: LESS
+    - sk: python
+    - sk: ruby
+
+-
+  title: Tools & Concpets
+  skills:
+    - sk: git
+    - sk: gitHub
+    -
+      sk: w3c
+      lb: Accessibility
+    - sk: node
+    - sk: NPM
+    - sk: yarn
+    - sk: Grunt
+    - sk: Gulp
+    - sk: inVision
+    -
+      sk: illustrator
+      lb: Adobe Illustrator
+    -
+      sk: photoshop
+      lb: Adobe Photoshop
+    - lb: Responsive Design
+    - lb: Usability
+    - lb: UX Testing

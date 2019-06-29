@@ -2,47 +2,15 @@
   <section element>
     <h3 pad>Skills</h3>
     <div>
-      <section>
-        <h5 pad>Technologies</h5>
+      <section v-for="(group, idx) in skills" :key="'skill-grp-' + idx">
+        <h5 pad>{{ group.title }}</h5>
         <div class="tagGroup">
-          <SkillTag sk="javascript" lb="JavaScript / ES6+" />
-          <SkillTag sk="react" />
-          <SkillTag sk="vue" />
-          <SkillTag sk="gatsby" />
-          <SkillTag sk="graphQL" />
-          <SkillTag sk="git" />
-          <SkillTag sk="webpack" />
-          <SkillTag sk="netlify" />
-          <SkillTag sk="storybookJS" />
-          <SkillTag sk="nuxt" />
-          <SkillTag sk="middleman" />
-          <SkillTag sk="HTML5" />
-          <SkillTag sk="CSS3" />
-          <SkillTag sk="SCSS" />
-          <SkillTag sk="bootstrap" />
-          <SkillTag sk="jquery" lb="jQuery" />
-          <SkillTag sk="LESS" />
-          <SkillTag sk="python" />
-          <SkillTag sk="ruby" />
-        </div>
-      </section>
-
-      <section>
-        <h5 pad>Tools &amp; Concepts</h5>
-        <div class="tagGroup">
-          <SkillTag sk="gitHub" />
-          <SkillTag sk="w3c" lb="Accessibility" />
-          <SkillTag sk="node" />
-          <SkillTag sk="NPM" />
-          <SkillTag sk="yarn" />
-          <SkillTag sk="grunt" />
-          <SkillTag sk="gulp" />
-          <SkillTag sk="inVision" />
-          <SkillTag sk="illustrator" lb="Adobe Illustrator" />
-          <SkillTag sk="photoshop" lb="Adobe Photoshop" />
-          <SkillTag lb="Responsive Design" />
-          <SkillTag lb="Usability" />
-          <SkillTag lb="UX Testing" />
+          <SkillTag v-for="s, idx in group.skills"
+                    :key="'skill-' + idx"
+                    :sk="s.sk"
+                    :lb="s.lb"
+                    :fm="s.fm"
+                    :vertical="group.vertical" />
         </div>
       </section>
     </div>
@@ -51,10 +19,14 @@
 
 <script>
 import SkillTag from '~/components/SkillTag.vue'
+import skills from '~/data/all-skills.yml'
 
 export default {
   components: {
     SkillTag
+  },
+  data(){
+    return { skills: skills }
   }
 }
 </script>

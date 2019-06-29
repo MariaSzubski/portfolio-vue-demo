@@ -4,10 +4,10 @@
 
 <script>
 export default {
-  props: ['sk', 'lb'],
+  props: ['sk', 'lb', 'fm'],
   computed: {
     imgSrc() {
-      return '/skill/' + this.sk + '.svg';
+      return '/skill/' + this.sk + ( this.fm || '.svg') ;
     }
   },
 }

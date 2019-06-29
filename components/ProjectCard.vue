@@ -4,7 +4,7 @@
     <div class="content">
       <h1>{{ title }}</h1>
       <h2 pad>{{ subtitle }}</h2>
-      <img :src="headerImg" :alt="title">
+      <img v-lazy="headerImg" :alt="title">
       <div><p v-html="desc"></p></div>
     </div>
 
@@ -34,7 +34,6 @@
         </div>
       </div>
     </aside>
-
   </article>
 </template>
 
@@ -87,7 +86,7 @@ article[project]{
     margin-bottom: 3rem;
   }
   h1 {
-    font-size: 4.8rem;
+    font-size: 4.2rem;
   }
   p {
     margin-bottom: 0;
@@ -96,7 +95,7 @@ article[project]{
 
 aside {
   flex: 2;
-  padding: 3rem;
+  padding: 3rem 2.2rem;
 
   @media (max-width: $scr-sm){
     > div:first-of-type a {
@@ -113,7 +112,7 @@ aside {
 }
 
 .links {
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
 
 .tag-group {

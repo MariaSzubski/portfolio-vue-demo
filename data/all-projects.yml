@@ -30,29 +30,6 @@
       label: Slides
       github: false
 -
-  title: Style Guide
-  subtitle: Documentation Template Site
-  hero: style_guide
-  desc: The Style Guide is a template for project documentation. It displays font styles, color palettes, web components, and design patterns. It's built to be responsive across all device sizes with AJAX and PHP, with fallbacks for users who have JavaScript disabled.
-
-  skills:
-    - sk: PHP
-    - sk: javaScript
-    - sk: jQuery
-    - sk: LESS
-    - lb: AJAX
-    - lb: Responsive Design
-
-  links:
-    -
-      href: https://github.com/MariaSzubski/style-guide
-      label: Source Code
-      github: true
-    -
-      href: /assets/style-guide
-      label: Project Demo
-      github: false
--
   title: Insight App
   subtitle: Rethinking Standardized Testing
   hero: insight
@@ -77,6 +54,29 @@
     -
       href: /assets/MSzubski_MDenzer_inSightProcess.pdf
       label: Design Process (PDF)
+      github: false
+-
+  title: Style Guide
+  subtitle: Documentation Template Site
+  hero: style_guide
+  desc: The Style Guide is a template for project documentation. It displays font styles, color palettes, web components, and design patterns. It's built to be responsive across all device sizes with AJAX and PHP, with fallbacks for users who have JavaScript disabled.
+
+  skills:
+    - sk: PHP
+    - sk: javaScript
+    - sk: jQuery
+    - sk: LESS
+    - lb: AJAX
+    - lb: Responsive Design
+
+  links:
+    -
+      href: https://github.com/MariaSzubski/style-guide
+      label: Source Code
+      github: true
+    -
+      href: /assets/style-guide
+      label: Project Demo
       github: false
 -
   title: Spooky Animations
@@ -133,13 +133,9 @@
     - lb: Wayfinding
     - lb: Motion graphics
 -
-  title: This Portfolio
-  hero: ikea_experience
+  title: This Portfolio Was Made With
 
   skills:
-    - sk: Vue
-    - sk: Nuxt
-    -
-      sk: Javascript
-      lb: ES6
+    - sk: vue
+    - sk: nuxt
     - sk: netlify

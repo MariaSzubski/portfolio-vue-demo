@@ -34,8 +34,8 @@ span {
 
   .dk & {
     background-color: rgba(darken($blue, 20%), .5);
-    padding: 0.6rem 1.5rem;
-    height: 3.8rem;
+    padding: 0.3rem 1.2rem;
+    height: 3.4rem;
   }
 
   &:hover{
@@ -50,7 +50,7 @@ span {
     width: 2.6rem;
     height: 2.6rem;
     .lt & { margin-right: 1rem; }
-    .dk & { margin-right: 1.2rem; }
+    .dk & { margin-right: 1.1rem; }
   }
 
   @media (min-width: $scr-sm) {
@@ -62,8 +62,8 @@ span {
     &:last-of-type { margin-right: 0rem; }
 
     img {
-      width: 2.2rem;
-      height: 2.2rem;
+      width: 2rem;
+      height: 2rem;
       margin-right: 0.6rem;
     }
   }

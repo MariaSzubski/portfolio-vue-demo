@@ -3,8 +3,8 @@
 -
   title: Gatsby Workshop
   subtitle: Getting Started with Static Site Generators
-  hero: style_guide
-  desc: 'I led a workshop on <strong>Static Site Generators & GatsbyJS</strong> for <a href="https://www.meetup.com/JAMstack-Cincinnati/" target="_blank">JAMstack Cincinnati</a>. This project was used to introduce the concepts of React components, props and state, routing, plugins, css-in-js, and deployment.'
+  hero: ssg_workshop
+  desc: 'I led a workshop on <strong>Static Site Generators & GatsbyJS</strong> for <a href="https://www.meetup.com/JAMstack-Cincinnati/" target="_blank" class="nowrap">JAMstack Cincinnati</a> in June 2019. I created this demo project to introduce the concepts of React components, props and state, routing, plugins, css-in-js, and deployment.'
 
   skills:
     - sk: Gatsby
@@ -13,6 +13,10 @@
       sk: JavaScript
       lb: ES6
     - sk: SCSS
+    -
+      sk: styled
+      lb: Styled Components
+      fm: .png
     - sk: yarn
     - sk: netlify
 

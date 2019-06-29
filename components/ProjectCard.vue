@@ -28,7 +28,8 @@
           <SkillTag v-for="s, idx in skills"
                     :key="idx"
                     :sk="s.sk"
-                    :lb="s.lb ? s.lb : '' "
+                    :lb="s.lb"
+                    :fm="s.fm"
                     vertical />
         </div>
       </div>

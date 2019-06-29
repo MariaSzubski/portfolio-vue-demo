@@ -131,7 +131,12 @@ p {
   }
 }
 
-a{
+.nowrap {
+  display: inline-block;
+  word-wrap: nowrap;
+}
+
+a {
   text-decoration: none;
   position: relative;
 

@@ -68,7 +68,7 @@ article[project]{
   display: flex;
   margin: 6rem;
   max-width: 96rem;
-  background-color: rgba(darken($blue, 10%), .9);
+  background-color: rgba(darken($blue, 11%), .9);
 
   @media (max-width: $scr-sm){
     flex-direction: column;

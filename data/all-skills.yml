@@ -23,6 +23,7 @@
       sk: styled
       lb: Styled Components
       fm: .png
+    - sk: YAML
     - sk: bootstrap
     -
       sk: jquery
@@ -32,7 +33,7 @@
     - sk: ruby
 
 -
-  title: Tools & Concpets
+  title: Tools & Design Concepts
   skills:
     - sk: git
     - sk: gitHub

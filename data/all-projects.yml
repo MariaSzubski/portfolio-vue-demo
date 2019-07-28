@@ -4,7 +4,7 @@
   title: Gatsby Workshop
   subtitle: Getting Started with Static Site Generators
   hero: ssg_workshop
-  desc: 'I led a workshop on <strong>Static Site Generators & GatsbyJS</strong> for <a href="https://www.meetup.com/JAMstack-Cincinnati/" target="_blank" class="nowrap">JAMstack Cincinnati</a> in June 2019. I created this demo project to introduce the concepts of React components, props and state, routing, plugins, css-in-js, and deployment.'
+  desc: 'I led a <strong>Static Site Generators & GatsbyJS</strong> workshop for <a href="https://www.meetup.com/JAMstack-Cincinnati/" target="_blank" class="nowrap">JAMstack Cincinnati</a> in June 2019. The demo project for this workshop intoduces React components, props and state, routing, plugins, css-in-js, and Netlify deployment.'
 
   skills:
     - sk: Gatsby
@@ -17,6 +17,7 @@
       sk: styled
       lb: Styled Components
       fm: .png
+    - sk: YAML
     - sk: yarn
     - sk: netlify
 
@@ -28,6 +29,10 @@
     -
       href: https://docs.google.com/presentation/d/12_HeL80Du2B6GEUQhsxrLm4R0gKGQdaM9Hm1JEtk_HQ/edit?usp=sharing
       label: Slides
+      github: false
+    -
+      href: https://www.ample.co/blog/jamstack-cincinnati-gatsbyjs-netlify
+      label: Workshop Recap
       github: false
 -
   title: Insight App
@@ -80,7 +85,7 @@
       github: false
 -
   title: Spooky Animations
-  subtitle: CSS Keyframes
+  subtitle: With CSS Keyframes
   hero: spooky
   desc: 'Halloween themed characters built with CSS and keyframe animations. Based on <a href="https://www.youtube.com/watch?v=ea69CKqsVMg" target="_blank">this demo</a>.'
 

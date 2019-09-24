@@ -1,0 +1,26 @@
+---
+
+title: Insight App
+subtitle: Rethinking Standardized Testing
+hero: insight
+
+skills:
+  - sk: PhoneGap
+  - sk: jQuery
+  - lb: Mobile UI Design
+  - lb: User Testing
+  - lb: Education Research
+
+links:
+  -
+    href: https://github.com/MariaSzubski/insight
+    label: Source Code
+    github: true
+  -
+    href: /assets/insight
+    label: Project Demo
+    github: false
+  -
+    href: /assets/MSzubski_MDenzer_inSightProcess.pdf
+    label: Design Process (PDF)
+    github: false

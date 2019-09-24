@@ -18,9 +18,11 @@
       </div>
       <div class="projects" element>
         <h5 pad>Projects</h5>
-        <p lg>
-          <nuxt-link to="/projects/style-guide">Style Guide</nuxt-link>
-        </p>
+        <p lg><nuxt-link to="/projects/style-guide">Style Guide</nuxt-link></p>
+        <p lg><nuxt-link to="/projects/spooky">Spooky Animations</nuxt-link></p>
+        <p lg><nuxt-link to="/projects/guitar-practice">Guitar Practice</nuxt-link></p>
+        <p lg><nuxt-link to="/projects/insight">Insight</nuxt-link></p>
+        <p lg><nuxt-link to="/projects/ikea-experience">IKEA Experience</nuxt-link></p>
       </div>
     </div>
   </main>

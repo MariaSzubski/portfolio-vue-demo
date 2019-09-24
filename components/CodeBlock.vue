@@ -1,7 +1,7 @@
 <template>
 <pre :class="classLang" >
   <h5 pad>{{ header }}</h5>
-  <code><slot /></code>
+  <code :class="classLang" ><slot /></code>
 </pre>
 </template>
 

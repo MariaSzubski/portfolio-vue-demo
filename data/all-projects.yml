@@ -1,0 +1,146 @@
+---
+
+-
+  title: Gatsby Workshop
+  subtitle: Getting Started with Static Site Generators
+  hero: ssg_workshop
+  desc: 'I led a <strong>Static Site Generators & GatsbyJS</strong> workshop for <a href="https://www.meetup.com/JAMstack-Cincinnati/" target="_blank" class="nowrap">JAMstack Cincinnati</a> in June 2019. The demo project for this workshop intoduces React components, props and state, routing, plugins, css-in-js, and Netlify deployment.'
+
+  skills:
+    - sk: Gatsby
+    - sk: React
+    -
+      sk: JavaScript
+      lb: ES6
+    - sk: SCSS
+    -
+      sk: styled
+      lb: Styled Components
+      fm: .png
+    - sk: YAML
+    - sk: yarn
+    - sk: netlify
+
+  links:
+    -
+      href: https://github.com/MariaSzubski/1906-getting-started-with-static-sites
+      label: Source Code
+      github: true
+    -
+      href: https://docs.google.com/presentation/d/12_HeL80Du2B6GEUQhsxrLm4R0gKGQdaM9Hm1JEtk_HQ/edit?usp=sharing
+      label: Slides
+      github: false
+    -
+      href: https://www.ample.co/blog/jamstack-cincinnati-gatsbyjs-netlify
+      label: Workshop Recap
+      github: false
+-
+  title: Insight App
+  subtitle: Rethinking Standardized Testing
+  hero: insight
+  desc: This tablet-based alternative tests students’ conceptual knowledge and creative problem solving in an engaging, exploratory format.
+
+  skills:
+    - sk: PhoneGap
+    - sk: jQuery
+    - lb: Mobile UI Design
+    - lb: User Testing
+    - lb: Education Research
+
+  links:
+    -
+      href: https://github.com/MariaSzubski/insight
+      label: Source Code
+      github: true
+    -
+      href: /assets/insight
+      label: Project Demo
+      github: false
+    -
+      href: /assets/MSzubski_MDenzer_inSightProcess.pdf
+      label: Design Process (PDF)
+      github: false
+-
+  title: Style Guide
+  subtitle: Documentation Template Site
+  hero: style_guide
+  desc: The Style Guide is a template for project documentation. It displays font styles, color palettes, web components, and design patterns. It's built to be responsive across all device sizes with AJAX and PHP, with fallbacks for users who have JavaScript disabled.
+
+  skills:
+    - sk: PHP
+    - sk: javaScript
+    - sk: jQuery
+    - sk: LESS
+    - lb: AJAX
+    - lb: Responsive Design
+
+  links:
+    -
+      href: https://github.com/MariaSzubski/style-guide
+      label: Source Code
+      github: true
+    -
+      href: /assets/style-guide
+      label: Project Demo
+      github: false
+-
+  title: Spooky Animations
+  subtitle: With CSS Keyframes
+  hero: spooky
+  desc: 'Halloween themed characters built with CSS and keyframe animations. Based on <a href="https://www.youtube.com/watch?v=ea69CKqsVMg" target="_blank">this demo</a>.'
+
+  skills:
+    -
+      sk: CSS3
+      lb: CSS Animation
+    - sk: SCSS
+
+  links:
+    -
+      href: https://github.com/MariaSzubski/lab/tree/master/spooky-css
+      label: Source Code
+      github: true
+    -
+      href: https://lab-mariasz-digital.netlify.com/spooky-css/
+      label: Project Demo
+      github: false
+-
+  title: Guitar Practice
+  subtitle: Skill Log & Song Tabs
+  hero: guitar_practice
+  desc: Guitar Practice Log is a web app that tracks skill progress and displays song details.
+
+  skills:
+    - sk: JavaScript
+    - sk: LESS
+    - sk: InVision
+    - lb: Data Visualization
+    - lb: Responsive Design
+
+  links:
+    -
+      href: https://github.com/MariaSzubski/GuitarPractice
+      label: Source Code
+      github: true
+    -
+      href: https://github.com/MariaSzubski/GuitarPractice/wiki
+      label: Process Wiki
+      github: false
+-
+  title: Ikea Experience
+  subtitle: RFID Shopping List & Wayfinding Concept
+  hero: ikea_experience
+  desc: This project rethinks the IKEA shopping experience with an RFID shopping list and improved in-store navigation.
+
+  skills:
+    - lb: User Research
+    - lb: UX Architecture
+    - lb: Wayfinding
+    - lb: Motion graphics
+-
+  title: This Portfolio Was Made With
+
+  skills:
+    - sk: vue
+    - sk: nuxt
+    - sk: netlify

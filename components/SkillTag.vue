@@ -4,10 +4,10 @@
 
 <script>
 export default {
-  props: ['sk', 'lb'],
+  props: ['sk', 'lb', 'fm'],
   computed: {
     imgSrc() {
-      return '/skill/' + this.sk + '.svg';
+      return '/skill/' + this.sk + ( this.fm || '.svg') ;
     }
   },
 }
@@ -29,11 +29,13 @@ span {
     background-color: white;
     color: $black;
     padding: 0.4rem 1.4rem;
+    height: 3rem;
   }
 
   .dk & {
-    background-color: rgba($black, .5);
-    padding: 0.6rem 1.5rem;
+    background-color: rgba(darken($blue, 20%), .5);
+    padding: 0.3rem 1.2rem;
+    height: 3.4rem;
   }
 
   &:hover{
@@ -48,7 +50,7 @@ span {
     width: 2.6rem;
     height: 2.6rem;
     .lt & { margin-right: 1rem; }
-    .dk & { margin-right: 1.2rem; }
+    .dk & { margin-right: 1.1rem; }
   }
 
   @media (min-width: $scr-sm) {
@@ -60,8 +62,8 @@ span {
     &:last-of-type { margin-right: 0rem; }
 
     img {
-      width: 2.2rem;
-      height: 2.2rem;
+      width: 2rem;
+      height: 2rem;
       margin-right: 0.6rem;
     }
   }

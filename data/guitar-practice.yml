@@ -1,0 +1,22 @@
+---
+
+title: Guitar Practice
+subtitle: Skill Log & Song Tabs
+hero: guitar_practice
+
+skills:
+  - sk: JavaScript
+  - sk: LESS
+  - sk: InVision
+  - lb: Data Visualization
+  - lb: Responsive Design
+
+links:
+  -
+    href: https://github.com/MariaSzubski/GuitarPractice
+    label: Source Code
+    github: true
+  -
+    href: https://github.com/MariaSzubski/GuitarPractice/wiki
+    label: Process Wiki
+    github: false

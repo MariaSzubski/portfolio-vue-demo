@@ -1,0 +1,19 @@
+---
+
+title: Spooky Animations
+subtitle: CSS Keyframes
+hero: spooky
+
+skills:
+  - sk: CSS3
+  - sk: SCSS
+
+links:
+  -
+    href: https://github.com/MariaSzubski/lab/css-animation-halloween
+    label: Source Code
+    github: true
+  -
+    href: /assets/spooky
+    label: Project Demo
+    github: false

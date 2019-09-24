@@ -29,9 +29,10 @@ div[app] {
 }
 
 main {
-  max-width: 96rem;
+  width: 100%;
+  max-width: 144rem;
   margin: 0 auto;
-  padding: 0rem 1rem;
+  padding: 0rem 2rem;
   display: flex;
   justify-content: center;
   align-items: center;

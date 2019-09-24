@@ -8,7 +8,7 @@
         <slot />
       </article>
       <aside>
-        <div>
+        <div v-if="links">
           <Btn v-for="l, idx in links"
                :key="idx"
                :href="l.href"
@@ -78,6 +78,7 @@ div[project] {
   align-items: flex-start;
   max-width: 96rem;
   @media (max-width: $scr-sm){
+    margin-top: 5rem;
     flex-direction: column;
     align-items: center;
   }
@@ -86,6 +87,9 @@ div[project] {
 article {
   flex: 3;
   margin-right: 3vw;
+  @media (max-width: $scr-md){
+    flex: 2;
+  }
   @media (max-width: $scr-sm){
     margin-right: 0vw;
     order: 2;
@@ -96,10 +100,16 @@ aside {
   flex: 1;
   @media (max-width: $scr-sm){
     width: 100%;
+    max-width: 36rem;
     > div:first-of-type a {
       display: inline-flex;
       width: calc(50% - 0.6rem);
       margin: 0.3rem;
+    }
+  }
+  @media (max-width: $scr-xs){
+    > div:first-of-type a {
+      width: 100%;
     }
   }
 
@@ -110,7 +120,18 @@ aside {
   }
 }
 
-.tag-group span{
-  width: 100%;
+.tag-group {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  @media (max-width: $scr-sm){
+    flex-direction: row;
+    span { flex: 1; min-width: 48%; }
+  }
+  @media (max-width: $scr-xs){
+    span { min-width: 100%; }
+  }
+
 }
 </style>

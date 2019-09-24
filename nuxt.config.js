@@ -69,6 +69,7 @@ export default {
   */
   plugins: [
     '~/plugins/vue-lazyload',
+    { src: '~/plugins/vue-carousel', ssr: false, },
   ],
 
   /*

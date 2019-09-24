@@ -22,6 +22,8 @@
           <nuxt-link to="/projects/style-guide">Style Guide</nuxt-link>
         </p>
       </div>
+      <SkillGroup  class="lt" />
+      <Testimonials />
     </div>
   </main>
 </template>
@@ -29,11 +31,13 @@
 <script>
 import Logo from '~/components/Logo.vue'
 import Btn from '~/components/Btn.vue'
+import Testimonials from '~/components/Testimonials.vue'
 
 export default {
   components: {
     Logo,
-    Btn
+    Btn,
+    Testimonials
   },
   data() {
     return {

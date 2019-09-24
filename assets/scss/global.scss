@@ -39,7 +39,7 @@ html {
 body {
   position: relative;
   z-index: 2;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   padding: 0px;
   margin: 0px;
   margin: 0px;
@@ -114,11 +114,13 @@ h6,
   font-size: 1.2rem;
   color: $gray-md;
   text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: bold;
 }
 
 p {
   margin-bottom: 3rem;
-  line-height: 140%;
+  line-height: 130%;
 
   &[lg] {
     font-size: 2.4rem;

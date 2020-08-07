@@ -20,7 +20,7 @@
     "nuxt": "^2.4.0",
     "nuxt-webfontloader": "^1.1.0",
     "postcss": "^7.0.16",
-    "prismjs": "^1.16.0",
+    "prismjs": "^1.21.0",
     "sass-loader": "^7.1.0",
     "set-value": "^3.0.1",
     "vue-lazyload": "^1.2.6"
